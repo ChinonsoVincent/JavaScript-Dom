@@ -60,3 +60,39 @@ console.log(li.classList.contains("list-items")); //to check if an element conta
 
 //Remove Element
 li.remove();
+
+//Traverse the DOM
+
+//parent node traversal
+const ulist = document.querySelector("ul");
+
+console.log(ulist.parentNode); //getting the parent, Btter to use node instead of element
+console.log(ulist.parentElement); //getting the parent
+console.log(ulist.parentNode.parentNode); //getting the parent of the parent or grandparent if you will
+console.log(ulist.parentElement.parentElement); //getting the parent of the parent
+
+//child node traversal
+console.log(ulist.childNodes);
+console.log(ulist.firstChild);
+console.log(ulist.lastChild);
+
+// ulist.firstChild.style.backgroundColor = "blue"; //this wouldnt work because te first child is a text node
+
+ulist.childNodes[1].style.backgroundColor = "blue"; //this would reflect
+
+//children
+console.log(ulist.children);
+console.log(ulist.firstElementChild);
+console.log(ulist.lastElementChild);
+
+//Sibling node traversal
+console.log(ulist.previousSibling); //it will five you a text node
+console.log(ulist.nextSibling); // text node
+
+//to show why it gives a text node
+const div1 = document.querySelector("div");
+
+console.log(div1.childNodes); // you would notice that the text node is before and after the ul
+//use element siblings
+console.log(ulist.previousElementSibling); // this is the way to escape that
+console.log(ulist.nextElementSibling);
