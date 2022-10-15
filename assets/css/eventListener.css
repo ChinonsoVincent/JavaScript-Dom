@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+body {
+	background: rgb(9, 47, 63);
+	color: white;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-heading {
+	font-size: 30px;
+	text-align: center;
+	padding-block: 20px;
+}
+
+.container {
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.boxes {
+	border: 1px white solid;
+	border-radius: 10px;
+	padding: 2em 1em;
+}
+
+#heading {
+	font-size: 20px;
+	font-weight: 500;
+	padding-bottom: 2em;
+}
+
+button {
+	background: inherit;
+	color: inherit;
+	padding: 10px;
+	border-color: inherit;
+	border-radius: 5px;
+}
