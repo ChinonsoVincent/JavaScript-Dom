@@ -3,7 +3,7 @@
 *::before {
 	margin: 0;
 	padding: 0;
-	box-sizing: content-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -47,4 +47,30 @@ button {
 	padding: 10px;
 	border-color: inherit;
 	border-radius: 5px;
+}
+
+.box {
+	margin: 20px auto 4px;
+}
+
+.hidden-content {
+	display: none;
+}
+
+.hidden-content.reveal-btn {
+	display: block;
+}
+
+#sports {
+	text-align: center;
+	margin: 30px auto;
+	width: 200px;
+	list-style: none;
+	border: solid 1px white;
+	padding: 20px;
+}
+
+#sports li {
+	border: solid 1px grey;
+	margin-block: 5px;
 }
